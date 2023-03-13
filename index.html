@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>My Blog</title>
-</head>
-<body>
-	<header>
-		<h1>Welcome to my Blog</h1>
-	</header>
+  
+<link href="./style.css" rel="stylesheet"/>
 
-	<main>
-		<article>
-			<h2>My First Blog Post</h2>
-			<p>This is my first blog post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla dui eget purus tristique, et luctus sapien interdum. </p>
-		</article>
+<div class="background"></div>
 
-		<article>
-			<h2>My Second Blog Post</h2>
-			<p>This is my second blog post. Sed euismod nulla eu purus laoreet dapibus. Nullam at libero non enim euismod scelerisque. </p>
-		</article>
-	</main>
+<button
+ class="burger"
+ onclick="toggleMenu()">
+</button>
 
-	<footer>
-		<p>&copy; 2023 My Blog</p>
-	</footer>
-</body>
+<div class="menu">
+ <nav>
+	<a
+	href="#"
+	style="animation-delay: 0.1s">
+	About
+	</a>
+	<a
+	href="#"
+	style="animation-delay: 0.2s">
+	Portforlio
+	</a>
+	<a
+	href="#"
+	style="animation-delay: 0.1s">
+	Contact
+	</a>
+ </nav>
+</div>
+
+<script type="text/javascript">
+	const toggleMenu = () => {
+		document.body.classList.toggle("open");
+	};
+
+</script>
+
 </html>
